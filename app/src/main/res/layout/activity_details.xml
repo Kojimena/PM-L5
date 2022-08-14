@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <TextView
+        android:id="@+id/nombrerestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="Nombre del restaurante"
+        android:fontFamily="arial"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/direccionrestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="arial"
+        android:padding="@dimen/padding"
+        android:text="Direccion del restaurante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombrerestaurante" />
+
+    <Button
+        android:id="@+id/button_permissionActivity_camera"
+        android:layout_width="@dimen/botonvisita"
+        android:layout_height="wrap_content"
+        android:fontFamily="arial"
+        android:backgroundTint="@color/colorboton"
+        android:padding="@dimen/padding"
+        android:text="@string/Iniciovisita"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccionrestaurante" />
+
+    <TextView
+        android:id="@+id/horariorestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="arial"
+        android:text="Horario del restaurante"
+        android:textSize="@dimen/tit3"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Button_width"
+        android:layout_marginTop="@dimen/margintop"
+        android:background="@color/gris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccionrestaurante">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:fontFamily="arial"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="Información adicional"
+        android:textColor="@color/gris"
+        android:textSize="@dimen/dimen_tit2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/button_permissionActivity_camera"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:fontFamily="arial"
+        android:layout_height="wrap_content"
+        android:text="@string/horarioatencion"
+        android:textStyle="bold"
+        android:textColor="@color/gris"
+        android:textSize="@dimen/tit3"
+        app:layout_constraintStart_toEndOf="@+id/direccion"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="arial"
+        android:padding="@dimen/padding"
+        android:src="@drawable/ic_baseline_access_time_24"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="arial"
+        android:padding="@dimen/padding"
+        android:src="@drawable/ic_outline_local_phone_24"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/direccion" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefono"
+        app:layout_constraintBottom_toBottomOf="@+id/telefono"
+        app:layout_constraintStart_toEndOf="@+id/telefono"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2314-6666"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/llamar"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="@+id/button_permissionActivity_camera"
+        android:textColor="@color/font_aqua"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

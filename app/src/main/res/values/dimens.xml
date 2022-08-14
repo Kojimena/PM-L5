@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Button_width">160dp</dimen>
+    <dimen name="viewblanco">370dp</dimen>
+    <dimen name="viewblancoheight">125dp</dimen>
+    <dimen name="margintop">100dp</dimen>
+    <dimen name="Buttonhei">40dp</dimen>
+    <dimen name="constraintwhite">100dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="marginStart">4dp</dimen>
+    <dimen name="marginboton">16dp</dimen>
+    <dimen name="paddinglinear">16dp</dimen>
+    <dimen name="topconstraint">50dp</dimen>
+    <dimen name="botonvisita">350dp</dimen>
+    <dimen name="dimen_tit2">20sp</dimen>
+    <dimen name="tit3">14sp</dimen>
+</resources>

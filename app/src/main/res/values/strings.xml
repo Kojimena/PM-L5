@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">PM-L5</string>
+    <string name="app_name">Laboratorio5</string>
+    <string name="button_terminar_jornada">Terminar jornada</string>
+    <string name="Diacumple">10 de Enero</string>
+    <string name="detallesbutton">Detalles</string>
+    <string name="act_disponible">Actualización disponible</string>
+    <string name="descargar_text">Descargar</string>
+    <string name="iniciar_text">Iniciar</string>
+    <string name="diacumple_text">Lunes</string>
+    <string name="Lugarcomercial">Zona 10 edificio Forum</string>
+    <string name="hora">8:00 am 22:00 pm</string>
+    <string name="nombreres">NacionSushi</string>
+    <string name="name">Karen Jimena Hernández Ortega</string>
+    <string name="Iniciovisita">Iniciar visita</string>
+    <string name="telefono">Teléfono</string>
+    <string name="horarioatencion">Horario de atención</string>
+    <string name="llamar">LLamar</string>
 </resources>
