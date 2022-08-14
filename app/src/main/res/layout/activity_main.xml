@@ -131,6 +131,7 @@
             android:text="@string/detallesbutton"
             android:textColor="@color/colorboton"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             app:layout_constraintEnd_toEndOf="@+id/constraintLayout" />
 
         <TextView

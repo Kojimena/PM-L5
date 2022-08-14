@@ -2,9 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_detailsActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailsActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/permissionActivity_camera"
+        android:layout_width="@dimen/botonvisita"
+        android:layout_height="wrap_content"
+        android:fontFamily="arial"
+        android:backgroundTint="@color/colorboton"
+        android:padding="@dimen/padding"
+        android:text="@string/Iniciovisita"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccionrestaurante" />
 
     <TextView
         android:id="@+id/nombrerestaurante"
@@ -28,18 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nombrerestaurante" />
 
-    <Button
-        android:id="@+id/button_permissionActivity_camera"
-        android:layout_width="@dimen/botonvisita"
-        android:layout_height="wrap_content"
-        android:fontFamily="arial"
-        android:backgroundTint="@color/colorboton"
-        android:padding="@dimen/padding"
-        android:text="@string/Iniciovisita"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/direccionrestaurante" />
+
 
     <TextView
         android:id="@+id/horariorestaurante"
@@ -63,6 +66,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -73,7 +77,7 @@
         android:textColor="@color/gris"
         android:textSize="@dimen/dimen_tit2"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/button_permissionActivity_camera"
+        app:layout_constraintStart_toStartOf="@+id/permissionActivity_camera"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
     <TextView
@@ -112,6 +116,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:text="@string/telefono"
         app:layout_constraintBottom_toBottomOf="@+id/telefono"
         app:layout_constraintStart_toEndOf="@+id/telefono"
@@ -126,12 +131,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttoncall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/llamar"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
-        app:layout_constraintEnd_toEndOf="@+id/button_permissionActivity_camera"
+        app:layout_constraintEnd_toEndOf="@+id/permissionActivity_camera"
         android:textColor="@color/font_aqua"
         style="@style/Widget.MaterialComponents.Button.TextButton"/>
 
