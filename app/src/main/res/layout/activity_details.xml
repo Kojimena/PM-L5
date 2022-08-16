@@ -5,6 +5,7 @@
     android:id="@+id/root_detailsActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/surface_light_primary"
     tools:context=".DetailsActivity">
 
     <com.google.android.material.button.MaterialButton
@@ -40,6 +41,7 @@
         android:fontFamily="arial"
         android:padding="@dimen/padding"
         android:text="Direccion del restaurante"
+        android:textColor="@color/cardview_dark_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nombrerestaurante" />
 
@@ -50,6 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="arial"
+        android:textColor="@color/cardview_dark_background"
         android:text="Horario del restaurante"
         android:textSize="@dimen/tit3"
         app:layout_constraintStart_toStartOf="@+id/textView7"
@@ -88,7 +91,7 @@
         android:layout_height="wrap_content"
         android:text="@string/horarioatencion"
         android:textStyle="bold"
-        android:textColor="@color/gris"
+        android:textColor="@color/cardview_dark_background"
         android:textSize="@dimen/tit3"
         app:layout_constraintStart_toEndOf="@+id/direccion"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -118,6 +121,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        android:textColor="@color/cardview_dark_background"
         android:text="@string/telefono"
         app:layout_constraintBottom_toBottomOf="@+id/telefono"
         app:layout_constraintStart_toEndOf="@+id/telefono"
@@ -127,6 +131,7 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
         android:text="2314-6666"
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
